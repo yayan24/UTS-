@@ -7,67 +7,89 @@
     android:background="#9C27B0"
     tools:context=".register">
 
-    <EditText
+    <TextView
         android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="245dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="25dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="REGISTER SOCCER IN THE WORLD"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="190dp"
         android:text="REGISTER"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="493dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DAFTAR"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="493dp" />
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:text="LOGIN"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="74dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="374dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/editText3"
         tools:text="EMAIL" />
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:ems="10"
         android:inputType="textPassword"
         android:text="PASSWORD"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="297dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintStart_toStartOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
 
     <EditText
         android:id="@+id/editText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="226dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="102dp"
-        android:layout_height="121dp"
-        app:srcCompat="@drawable/REGIS"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="86dp" />
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:srcCompat="@drawable/regis" />
 </androidx.constraintlayout.widget.ConstraintLayout>
